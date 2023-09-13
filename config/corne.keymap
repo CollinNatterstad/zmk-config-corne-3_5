@@ -45,9 +45,9 @@
 // ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# |     | SHFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &kp PAGE_UP   &kp ESCAPE &kp GRAVE &kp F5    &kp DELETE  &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH  &none
-   &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none     &none
-   &kp INSERT    &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT &none
+   &none &kp PAGE_UP   &kp ESCAPE &kp GRAVE &kp F5    &kp DELETE  &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH  &none
+   &none &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none     &none
+   &none &kp INSERT    &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT &none
                             &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
@@ -66,9 +66,9 @@
                 };
                 function_layer {
 // -----------------------------------------------------------------------------------------
-// ||BT_CLR|BT1   |BRIUP |BRIDN |none  |---|  f1 | f2  |  f3 |  f4 |     |
-// ||BT2   |BT3   |NEXT  |Prev  |none  |---|  f5 | f6  |  f7 |  f8 |     |
-// ||BT4   |BT5   |VOLUP | MUTE |VOLDWN|---|  f9 | f10 | f11 | f12 |     |
+// ||BT_CLR|BT1   |BRIUP |BRIDN |none  |---|  f1 | f2  |  f3 |  f4 |     ||
+// ||BT2   |BT3   |NEXT  |Prev  |none  |---|  f5 | f6  |  f7 |  f8 |     ||
+// ||BT4   |BT5   |VOLUP | MUTE |VOLDWN|---|  f9 | f10 | f11 | f12 |     ||
 //                |trans |trans |none  |---|trans|trans|trans|
                         bindings = <
    &none &bt BT_CLR   &bt BT_SEL 0 &kp C_BRI_UP    &kp C_BRI_DN  &none              &kp F1   &kp F2  &kp F3  &kp F4  &none &none
