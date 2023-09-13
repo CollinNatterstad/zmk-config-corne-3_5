@@ -33,9 +33,9 @@
 // ||  Z  |  X  |  C  |  V  | Balt|---| Nalt|  M   |  ,<  |  .> |  (/?)\  ||
 //              | GUI | LWR | SPC |---| BKSP|RSHFT | RSE  |
                         bindings = <
-   &none &kp Q &kp W &kp E    &kp R &mt RET T   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mo PIPE P      &none
-   &none &kp A &kp S &kp D    &kp F &mt CTRL G  &mt CTRL H  &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON   &none
-   &none &kp Z &kp X &kp C    &kp V &mt LALT B  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mo BSLH FSLH   &none
+         &kp Q &kp W &kp E    &kp R &mt RET T   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mo PIPE P      
+         &kp A &kp S &kp D    &kp F &mt CTRL G  &mt CTRL H  &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON   
+         &kp Z &kp X &kp C    &kp V &mt LALT B  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mo BSLH FSLH   
                      &kp LGUI &mo 1 &kp SPACE   &kp BKSP    &kp RSHFT             &mo 2
                         >;
                 };
