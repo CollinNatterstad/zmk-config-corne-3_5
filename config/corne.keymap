@@ -37,7 +37,7 @@
                      &kp LGUI &mo left        &kp SPACE   &kp BKSP    &kp RSHFT             &mo right
                         >;
                 };
-                lower_layer {
+                left {
 // -----------------------------------------------------------------------------------------
 // ||PGUP  | ESC |GRAVE|  f5 | DEL |---|  7&  | 8*  | 9( | -_  |  /  ||
 // ||PGDOWN| TAB | HOME|  UP | END |---|  4$  | 5%  | 6^ | = + |     ||
@@ -50,7 +50,7 @@
                             &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
-                raise_layer {
+                right {
 // -----------------------------------------------------------------------------------------
 // ||     |     |S    |LSHFT|LGUI |---|  ^  |  &  |  *  |  (  |  )  ||
 // ||     |     |GRAVE|LSHFT|LCTRL|---|  -  |  =  |  [  |  ]  |  \  ||
@@ -63,7 +63,7 @@
                       &trans    &trans    &trans      &trans         &trans    &trans
                         >;
                 };
-                function_layer {
+                tri {
 // -----------------------------------------------------------------------------------------
 // ||BT_CLR|BT1   |BRIUP |BRIDN |none  |---|  f1 | f2  |  f3 |  f4 |     ||
 // ||BT2   |BT3   |NEXT  |Prev  |none  |---|  f5 | f6  |  f7 |  f8 |     ||
