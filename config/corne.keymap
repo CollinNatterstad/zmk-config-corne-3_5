@@ -9,16 +9,16 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define default_layer 0
-#define lower_layer 1
-#define raise_layer 2
-#define function_layer 3
+#define left 1
+#define right 2
+#define tri 3
 
 / {
         conditional_layers {
                 compatible = "zmk,conditional_layers";
-                function_layer {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
+                tri_layer {
+                        if-layers = <left right>;
+                        then-layer = <tri>;
                 };
         };
 };
