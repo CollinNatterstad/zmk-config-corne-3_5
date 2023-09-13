@@ -21,8 +21,7 @@
                         then-layer = <tri>;
                 };
         };
-};
-/ {
+
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
@@ -35,7 +34,7 @@
    &none &kp Q &kp W &kp E    &kp R           &mt RET T   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P     &none
    &none &kp A &kp S &kp D    &kp F           &mt LCTRL G &mt RCTRL H &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON  &none
    &none &kp Z &kp X &kp C    &kp V           &mt LALT B  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mt BSLH FSLH  &none
-                     &kp LGUI &mo 1 &kp SPACE   &kp BKSP    &kp RSHFT             &mo 2
+                     &kp LGUI &mo left        &kp SPACE   &kp BKSP    &kp RSHFT             &mo right
                         >;
                 };
                 lower_layer {
