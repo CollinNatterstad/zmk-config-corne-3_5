@@ -41,15 +41,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// ||PGUP  | ESC |GRAVE|  f5 | DEL |---|  7&  | 8*  | 9( | *   |  /  ||
+// ||PGUP  | ESC |GRAVE|  f5 | DEL |---|  7&  | 8*  | 9( | -_  |  /  ||
 // ||PGDOWN| TAB | HOME|  UP | END |---|  4$  | 5%  | 6^ | = + |     ||
 // ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# | ,   | SHFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &kp PG_UP &kp ESC    &kp GRAVE &kp f5    &kp DEL     &kp N7  &kp N8 &kp N9 &mp MINUS &kp FSLH
-   &kp PG_DN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none    
-   &kp INS   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &kp COMMA &kp RSHFT
-                              &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
+   &kp PG_UP &kp ESC    &kp GRAVE &kp f5    &kp DEL     &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH
+   &kp PG_DN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none
+   &kp INS   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT
+                        &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
                 raise_layer {
@@ -59,9 +59,9 @@
 // ||     |     |     | TAB |LALT |---|  _  |  +  |  {  |  }  | "|" ||
 //              |trans|trans|trans|---|trans|trans|trans|
                         bindings = <
-   &none &none  &none &kp TILDE &none     &none       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &none
-   &none &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &none
-   &none &none  &none &none     &kp TAB   &LALT       &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &none
+   &none  &none &kp TILDE &none     &none       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
+   &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH
+   &none  &none &none     &kp TAB   &LALT       &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE
                       &trans    &trans    &trans      &trans    &trans    &trans
                         >;
                 };
