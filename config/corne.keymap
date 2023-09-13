@@ -13,6 +13,10 @@
 #define right 2
 #define tri 3
 
+&mt {
+        tapping-term-ms=<300>;
+};
+
 / {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
@@ -31,10 +35,10 @@
 // ||  Z  |  X  |  C  |  V  | Balt|---| Nalt|  M   |  ,<  |  .> |  (/?)\  ||
 //              | GUI | LWR | SPC |---| BKSP|RSHFT | RSE  |
                         bindings = <
-   &kp Q &kp W &kp E    &kp R           &mt RET T   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P
-   &kp A &kp S &kp D    &kp F           &mt LCTRL G &mt RCTRL H &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON
-   &kp Z &kp X &kp C    &kp V           &mt LALT B  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mt BSLH FSLH
-                     &kp LGUI &mo left        &kp SPACE   &kp BKSP    &kp RSHFT             &mo right
+   &none &kp Q &kp W &kp E    &kp R    &mt RET T   &kp Y       &mt APOS U           &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P    &none
+   &none &kp A &kp S &kp D    &kp F    &mt LCTRL G &mt RCTRL H &mt DOUBLE_QUOTES J  &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON &none
+   &none &kp Z &kp X &kp C    &kp V    &mt LALT B  &mt RALT N  &kp  M               &kp COMMA          &kp DOT               &mt BSLH FSLH &none
+                     &kp LGUI &mo left &kp SPACE   &kp BKSP    &kp RSHFT            &mo right
                         >;
                 };
                 left {
@@ -44,10 +48,10 @@
 // ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# |     | SHFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &kp PAGE_UP   &kp ESCAPE &kp GRAVE &kp F5    &kp DELETE  &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH
-   &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none
-   &kp INSERT    &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT
-                            &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
+   &none &kp PAGE_UP   &kp ESCAPE &kp GRAVE &kp F5    &kp DELETE  &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH  &none
+   &none &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none     &none
+   &none &kp INSERT    &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT &none
+                                  &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
                 right {
@@ -57,9 +61,9 @@
 // ||     |     |     | TAB |LALT |---|  _  |  +  |  {  |  }  | "|" ||
 //              |trans|trans|trans|---|trans|trans|trans|
                         bindings = <
-   &none  &none &kp S     &kp LSHFT &kp LGUI    &kp CARET      &kp AMPS  &kp KP_MULTIPLY &kp LPAR        &kp RPAR
-   &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS      &kp EQUAL &kp LBKT        &kp RBKT        &kp BSLH
-   &none  &none &none     &kp TAB   &kp LALT    &kp UNDERSCORE &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE
+   &none &none  &none &kp S     &kp LSHFT &kp LGUI    &kp CARET      &kp AMPS  &kp KP_MULTIPLY &kp LPAR        &kp RPAR &none
+   &none &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS      &kp EQUAL &kp LBKT        &kp RBKT        &kp BSLH &none
+   &none &none  &none &none     &kp TAB   &kp LALT    &kp UNDERSCORE &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE &none
                       &trans    &trans    &trans      &trans         &trans    &trans
                         >;
                 };
