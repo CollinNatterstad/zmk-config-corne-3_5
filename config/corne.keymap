@@ -46,9 +46,9 @@
 // ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# | ,   | SHFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &kp PG_UP &kp ESC    &kp GRAVE &kp f5    &kp DEL     &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH
-   &kp PG_DN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none
-   &kp INS   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT
+   &kp PAGE_UP   &kp ESCAPE   &kp GRAVE &kp F5    &kp DELETE     &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH
+   &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none
+   &kp INSERT   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT
                         &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
@@ -72,9 +72,9 @@
 // ||BT4   |BT5   |VOLUP | MUTE |VOLDWN|---|  f9 | f10 | f11 | f12 |     |
 //                |trans |trans |none  |---|trans|trans|trans|
                         bindings = <
-   &none &bt BT_CLR   &bt BT_SEL 0 &kp C_BRI_UP &kp C_BRI_DN  &none         &kp f1   &kp f2  &kp f3  &kp f4  &none &none
-   &none &bt BT_SEL 1 &bt BT_SEL 2 &kp C_NEXT   &kp C_PREV    &none         &kp f5   &kp f6  &kp f7  &kp f8  &none &none 
-   &none &bt BT_SEL 3 &bt BT_SEL 4 &kp C_VOL_UP &kp C_Mute    &kp C_VOL_DN  &kp f9   &kp f10 &kp f11 &kp f12 &none &none 
+   &none &bt BT_CLR   &bt BT_SEL 0 &kp C_BRI_UP &kp C_BRI_DN  &none         &kp F1   &kp F2  &kp F3  &kp F4  &none &none
+   &none &bt BT_SEL 1 &bt BT_SEL 2 &kp C_NEXT   &kp C_PREV    &none         &kp F5   &kp F6  &kp F7  &kp F8  &none &none 
+   &none &bt BT_SEL 3 &bt BT_SEL 4 &kp C_VOL_UP &kp C_Mute    &kp C_VOL_DN  &kp F9   &kp F10 &kp F11 &kp F12 &none &none 
                                    &kp trans    &trans        &trans        &trans  &trans   &kp trans
                         >;
                 };
