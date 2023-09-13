@@ -59,9 +59,9 @@
 // ||     |     |     | TAB |LALT |---|  _  |  +  |  {  |  }  | "|" ||
 //              |trans|trans|trans|---|trans|trans|trans|
                         bindings = <
-   &none  &none &kp TILDE &none     &none       &kp CARET      &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
+   &none  &none &kp S     &kp LSHFT &kp LGUI    &kp CARET      &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
    &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS      &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH
-   &none  &none &none     &kp TAB   &kp ALT     &kp UNDERSCORE &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE
+   &none  &none &none     &kp TAB   &kp LALT     &kp UNDERSCORE &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE
                 &trans    &trans    &trans      &trans         &trans    &trans
                         >;
                 };
