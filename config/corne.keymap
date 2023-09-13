@@ -72,9 +72,9 @@
 // ||BT4   |BT5   |VOLUP | MUTE |VOLDWN|---|  f9 | f10 | f11 | f12 |     |
 //                |trans |trans |none  |---|trans|trans|trans|
                         bindings = <
-   &bt BT_CLR   &bt BT_SEL 0 &kp C_BRI_UP &kp C_BRI_DN  &none         &kp F1   &kp F2  &kp F3  &kp F4  &none
-   &bt BT_SEL 1 &bt BT_SEL 2 &kp C_NEXT   &kp C_PREV    &none         &kp F5   &kp F6  &kp F7  &kp F8  &none
-   &bt BT_SEL 3 &bt BT_SEL 4 &kp C_VOL_UP &kp C_Mute    &kp C_VOL_DN  &kp F9   &kp F10 &kp F11 &kp F12 &none
+   &bt BT_CLR   &bt BT_SEL 0 &kp C_BRI_UP    &kp C_BRI_DN  &none         &kp F1   &kp F2  &kp F3  &kp F4  &none
+   &bt BT_SEL 1 &bt BT_SEL 2 &kp C_NEXT      &kp C_PREV    &none         &kp F5   &kp F6  &kp F7  &kp F8  &none
+   &bt BT_SEL 3 &bt BT_SEL 4 &kp C_VOLUME_UP &kp C_MUTE    &kp C_VOLUME_DOWN  &kp F9   &kp F10 &kp F11 &kp F12 &none
                              &kp trans    &trans        &trans        &trans  &trans   &kp trans
                         >;
                 };
