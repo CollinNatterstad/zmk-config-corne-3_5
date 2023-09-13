@@ -33,10 +33,10 @@
 // ||  Z  |  X  |  C  |  V  | Balt|---| Nalt|  M   |  ,<  |  .> |  (/?)\  ||
 //              | GUI | LWR | SPC |---| BKSP|RSHFT | RSE  |
                         bindings = <
-   &kp Q &kp W &kp E    &kp R &mt RET T   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P      
-   &kp A &kp S &kp D    &kp F &mt CTRL G  &mt CTRL H  &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON   
-   &kp Z &kp X &kp C    &kp V &mt LALT B  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mt BSLH FSLH   
-                     &kp LGUI &mo 1 &kp SPACE   &kp BKSP    &kp RSHFT             &mo 2
+   &kp Q &kp W &kp E    &kp R &mt RET T                   &kp Y       &mt APOS U            &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P
+   &kp A &kp S &kp D    &kp F &mt LCTRL G                 &mt RCTRL H  &mt DOUBLE_QUOTES J   &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON
+   &kp Z &kp X &kp C    &kp V &mt LALT B                  &mt RALT N  &kp  M                &kp COMMA          &kp DOT               &mt BSLH FSLH
+                     &kp LGUI &mo lower_layer &kp SPACE   &kp BKSP    &kp RSHFT             &mo raise_layer
                         >;
                 };
                 lower_layer {
@@ -46,9 +46,9 @@
 // ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# | ,   | SHFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &none &kp PG_UP &kp ESC    &kp GRAVE &kp f5    &kp DEL     &kp N7  &kp N8 &kp N9 &mp MINUS &kp FSLH  &none
-   &none &kp PG_DN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none     &none
-   &none &kp INS   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &kp COMMA &kp RSHFT &none
+   &kp PG_UP &kp ESC    &kp GRAVE &kp f5    &kp DEL     &kp N7  &kp N8 &kp N9 &mp MINUS &kp FSLH
+   &kp PG_DN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none    
+   &kp INS   &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &kp COMMA &kp RSHFT
                               &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
                         >;
                 };
