@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define default_layer 0
-#define left 1
-#define right 2
+#define left 2
+#define right 1
 #define tri 3
 
 &mt {
@@ -30,28 +30,28 @@
                 compatible = "zmk,keymap";
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// ||  Q  |  W  |  E  |  R  |RET T|---|  Y  |  U'  |  I[  |  O] |  P|     ||
-// ||  A  |  S  |  D  |  F  |GCTRL|---|HCTRL|  J"  |  K{  |  L} |  ;:     ||
-// ||  Z  |  X  |  C  |  V  | Balt|---| Nalt|  M   |  ,<  |  .> |  (/?)\  ||
+// ||  Q  |  W  |  E  |  R  | T   |---|  Y  |  U   |  I[  |  O] |  P\|    ||
+// ||  A  |  S  |  D  |  F  | G   |---| " H |  J'  |  K{  |  L} | RCTRL;: ||
+// ||CTRLZ|  X  |  C  |  V  | B   |---| N   |  M   |  ,<  |  .> | (/?)RALT||
 //              | GUI | LWR | SPC |---| BKSP|RSHFT | RSE  |
                         bindings = <
-   &none &kp Q &kp W &kp E    &kp R    &mt RET T   &kp Y       &mt APOS U           &mt LEFT_BRACKET I &mt RIGHT_BRACKET O   &mt PIPE P    &none
-   &none &kp A &kp S &kp D    &kp F    &mt LCTRL G &mt RCTRL H &mt DOUBLE_QUOTES J  &mt LEFT_BRACE K   &mt RIGHT_BRACE L     &kp SEMICOLON &none
-   &none &kp Z &kp X &kp C    &kp V    &mt LALT B  &mt RALT N  &kp  M               &kp COMMA          &kp DOT               &mt BSLH FSLH &none
-                     &kp LGUI &mo left &kp SPACE   &kp BKSP    &kp RSHFT            &mo right
+   &none &kp Q       &kp W    &kp E    &kp R     &kp T       &kp Y                 &kp  U     &kp I      &kp O     &mt BSLH P          &none
+   &none &kp A       &kp S    &kp D    &kp F     &kp G       &mt DOUBLE_QUOTES H   &mt APOS J &kp K      &kp L     &mt RCTRL SEMICOLON &none
+   &none &mt RCTRL Z &kp X    &kp C    &kp V     &kp B       &kp N                 &kp  M     &kp COMMA  &kp DOT   &mt RALT FSLH       &none
+                     &kp LGUI &mo left &kp SPACE             &kp BKSP              &kp RSHFT  &mo right
                         >;
                 };
                 left {
 // -----------------------------------------------------------------------------------------
-// ||PGUP  | ESC |GRAVE|  f5 | DEL |---|  7&  | 8*  | 9( | -_  |  /  ||
-// ||PGDOWN| TAB | HOME|  UP | END |---|  4$  | 5%  | 6^ | = + |     ||
-// ||  INS |LCTRL| LFT | DWN | RGT |---|  1!  | 2@  | 3# |     | SHFT||
+// ||PGUP  | HOME|  UP | END | DEL |---|  /?  | 7&  | 8* | 9(  | LBRC ||
+// ||PGDOWN| LFT | DWN | RGT | ESC |---|  -_  | 4$  | 5% | 6^  | LBKT ||
+// ||LSHFT | F5  | ESC | TAB |LSHFT|---|  =+  | 1!  | 2@ | 3#  |RSHIFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
-   &none &kp PAGE_UP   &kp ESCAPE &kp GRAVE &kp F5    &kp DELETE  &kp N7  &kp N8 &kp N9 &kp MINUS &kp FSLH  &none
-   &none &kp PAGE_DOWN &kp TAB    &kp HOME  &kp UP    &kp END     &kp N4  &kp N5 &kp N6 &kp EQUAL &none     &none
-   &none &kp INSERT    &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &kp N1  &kp N2 &kp N3 &none     &kp RSHFT &none
-                                  &trans    &trans    &trans      &kp RET &kp N0 &kp DOT
+   &none &kp PAGE_UP   &kp HOME   &kp UP    &kp END    &kp DEL     &kp FSLH   &kp N8 &kp N8 &kp N9  &kp LBRC    &none
+   &none &kp PAGE_DOWN &kp LEFT   &kp DOWN  &kp RIGHT  &kp ESC     &kp MINUS  &kp N4 &kp N5 &kp N6  &kp LBKT   &none
+   &none &kp LSHFT     &kp F5     &kp SC E  &kp TAB    &kp BKSP    &kp EQUAL  &kp N1 &kp N2 &kp N3  &kp RSHFT  &none
+                                  &trans    &trans     &trans      &kp RET    &kp N0 &kp DOT
                         >;
                 };
                 right {
