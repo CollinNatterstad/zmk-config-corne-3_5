@@ -37,7 +37,7 @@
                         bindings = <
    &none &kp Q       &kp W    &kp E    &kp R     &kp T       &kp Y                 &kp  U     &kp I      &kp O     &mt BSLH P          &none
    &none &kp A       &kp S    &kp D    &kp F     &kp G       &mt DOUBLE_QUOTES H   &mt APOS J &kp K      &kp L     &mt RCTRL SEMICOLON &none
-   &none &kp Z       &kp X    &kp C    &kp V     &kp B       &kp N                 &kp  M     &kp COMMA  &kp DOT   &mt RALT FSLH       &none
+   &none &mt LCTL Z  &kp X    &kp C    &kp V     &kp B       &kp N                 &kp  M     &kp COMMA  &kp DOT   &mt RALT FSLH       &none
                      &kp LGUI &mo left &kp SPACE             &kp BKSP              &kp RSHFT  &mo right
                         >;
                 };
@@ -45,23 +45,23 @@
 // -----------------------------------------------------------------------------------------
 // ||PGUP  | HOME|  UP | END | DEL |---|  /?  | 7&  | 8* | 9(  | LBRC ||
 // ||PGDOWN| LFT | DWN | RGT | ESC |---|  -_  | 4$  | 5% | 6^  | LBKT ||
-// ||LSHFT | F5  | ESC | TAB |LSHFT|---|  =+  | 1!  | 2@ | 3#  |RSHIFT||
+// ||LSHFT | F5  |Grave| TAB |LSHFT|---|  =+  | 1!  | 2@ | 3#  |RSHIFT||
 //               |trans|trans|trans|---| RET  | 0)  |  . |
                         bindings = <
    &none &kp PAGE_UP   &kp HOME   &kp UP    &kp END    &kp DEL     &kp FSLH   &kp N7 &kp N8 &kp N9  &kp LBRC   &none
    &none &kp PAGE_DOWN &kp LEFT   &kp DOWN  &kp RIGHT  &kp ESC     &kp MINUS  &kp N4 &kp N5 &kp N6  &kp LBKT   &none
-   &none &kp LSHFT     &kp F5     &kp E     &kp TAB    &kp BKSP    &kp EQUAL  &kp N1 &kp N2 &kp N3  &kp RSHFT  &none
+   &none &kp LSHFT     &kp F5     &kp GRAVE &kp TAB    &kp BKSP    &kp EQUAL  &kp N1 &kp N2 &kp N3  &kp RSHFT  &none
                                   &trans    &trans     &trans      &kp RET    &kp N0 &kp DOT
                         >;
                 };
                 right {
 // -----------------------------------------------------------------------------------------
-// ||     |     |S    |LSHFT|LGUI |---|  ^  |  &  |  *  |  (  |  )  ||
+// ||     |     |S    |LSHFT|LGUI |---|  ^  |  &  |  (  |  )  |     ||
 // ||     |     |GRAVE|LSHFT|LCTRL|---|  -  |  =  |  [  |  ]  |  \  ||
 // ||     |     |     | TAB |LALT |---|  _  |  +  |  {  |  }  | "|" ||
 //              |trans|trans|trans|---|trans|trans|trans|
                         bindings = <
-   &none &none  &none &kp S     &kp LSHFT &kp LGUI    &kp CARET      &kp AMPS  &kp KP_MULTIPLY &kp LPAR        &kp RPAR &none
+   &none &none  &none &kp S     &kp LSHFT &kp LGUI    &kp CARET      &kp AMPS  &kp LPAR        &kp RPAR        &none    &none
    &none &none  &none &kp GRAVE &kp LSHFT &kp LCTRL   &kp MINUS      &kp EQUAL &kp LBKT        &kp RBKT        &kp BSLH &none
    &none &none  &none &none     &kp TAB   &kp LALT    &kp UNDERSCORE &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE &none
                       &trans    &trans    &trans      &trans         &trans    &trans
