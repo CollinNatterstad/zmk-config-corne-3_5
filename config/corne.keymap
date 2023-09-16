@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define default_layer 0
-#define left 2
-#define right 1
+#define left 1
+#define right 2
 #define tri 3
 
 &mt {
