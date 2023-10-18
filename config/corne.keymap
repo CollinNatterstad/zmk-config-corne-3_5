@@ -16,12 +16,13 @@
 &mt {
         tapping-term-ms=<250>;
 };
+
 / {
         combos{
                 compatible = 'zmk,combos';
                 combo_escape {
                         timeout = <50>;
-                        layer = <0>;
+                        layer = default_layer;
                         key-positions = <1 2>;
                         bindings = <&kp ESC>;
                 };
