@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            layer = default_layer
+            layer = default_layer;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
