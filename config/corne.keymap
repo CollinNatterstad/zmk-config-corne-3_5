@@ -25,7 +25,7 @@
                         key-positions = <1 2>;
                         bindings = <&kp LGUI &kp LSHFT &kp S>;
                 };
-                combo_escape{
+                combo_escape = {
                         timeout = <50>;
                         layer = <0>;
                         key-positions = <1 12>;
