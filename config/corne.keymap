@@ -18,6 +18,18 @@
 };
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                        timeout-ms = <50>;
+                        layers = default_layer;
+                        key-positions = <1 2>;
+                        bindings = <&kp ESC>;
+                };
+        };
+};
+
+/ {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
